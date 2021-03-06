@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx ava"
+    "test": "npx ava",
+    "publish": "npm publish --registry=https://registry.npmjs.org/"
   },
   "author": "anson0370",
   "license": "ISC",
