@@ -1,0 +1,14 @@
+{
+  "name": "@terminus/fastjson-converter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx ava"
+  },
+  "author": "anson0370",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^3.15.0"
+  }
+}
