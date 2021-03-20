@@ -1,11 +1,11 @@
 {
   "name": "fastjson-converter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "npx ava",
-    "publish": "npm publish --registry=https://registry.npmjs.org/"
+    "pub": "npm publish --registry=https://registry.npmjs.org/"
   },
   "author": "anson0370",
   "license": "ISC",

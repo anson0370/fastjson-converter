@@ -1,5 +1,5 @@
 function parse(jsonString) {
-  const jsonObj = JSON.parse(jsonString);
+  const jsonObj = JSON.parse(prepareJsonString(jsonString));
 
   if (!isObj(jsonObj) && !isArray(jsonObj)) {
     return jsonObj;
@@ -10,6 +10,12 @@ function parse(jsonString) {
 
   visitJsonObj(jsonObj, null, null, refTragets, currentPath);
   return jsonObj;
+}
+
+function prepareJsonString(jsonString) {
+  // 这里应该是 fastjson 的一个 bug ，对 __xxx 的字段在生成 $ref 的时候变成了 \\_\\_ ，普通的 value 不会
+  // 所以这里替换一下
+  return jsonString.replace(/\\_/g, '_');
 }
 
 function visitJsonObj(jsonObj, parentObj, selfPath, refTargets, currentPath) {
