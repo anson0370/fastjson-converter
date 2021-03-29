@@ -1,8 +1,11 @@
 {
   "name": "fastjson-converter",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.3",
+  "description": "A fastjson parser for js",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "test": "npx ava",
     "pub": "npm publish --registry=https://registry.npmjs.org/"
